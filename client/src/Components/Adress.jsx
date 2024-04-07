@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-// import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid'
-
 export const Adress = ({ onFormDataChange, formData, onNext, onBack }) => {
 return(
 <>
@@ -52,17 +50,6 @@ return(
               value={formData.adress} onChange={onFormDataChange}
             />
           </div>
-          {/* <div className="col-span-6">
-            <label htmlFor="Phone" className="block text-sm font-medium text-gray-700"> Phone Number </label>
-
-            <input
-              type="number"
-              id="Phone"
-              name="phone"
-              className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
-              value={formData.phone} onChange={onFormDataChange}
-            />
-          </div> */}
           <div className="col-span-6 ">
           <div className="col-span-6 sm:col-span-3">
             <label htmlFor="Country" className="block text-sm font-medium text-gray-700">
@@ -128,14 +115,6 @@ return(
              className="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600  py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500"
              >Next
             </button>
-           
-          {/* <button type="submit" onClicl={onSubmit}>Next</button> */}
-
-            {/* <p className="mt-4 text-sm text-gray-500 sm:mt-0">
-              Already have an account?
-              <a href="#" className="text-gray-700 underline" onClick={onLogIn}>Log in</a>
-            </p> */}
-          {/* </div> */}
         </form>
       </div>
     </main>

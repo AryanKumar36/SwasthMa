@@ -1,66 +1,36 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from './Home';
-import {Doctor} from './Doctor';
-import {Chemist} from './Chemist';
-import {SignUp} from './SignUp';
+import { Link } from 'react-router-dom';
 
-// % parent container vw screen (padding and margin avoid)
 const Navigation = () => {
   return (
-    <Router>
+    <>
       <div >
-        <nav style={{position:'sticky', top:0, display:'flex', flexDirection:'row', minHeight:'50px', minWidth:'100%', zIndex:999, backgroundColor:'#6FB3B8'}}>
-             <div style={{minWidth:'20%', }}>
-            <p>Logo</p>
-             </div>
-             <div style={{minWidth:'80%',display:'flex', flexDirection:'row',justifyContent:'flex-end'}}>
-               <ul style={{ display:'flex', flexDirection:'row', minHeight:'100%',minWidth:'60%', justifyContent:'space-between', alignItems:'center'}}>
-               <li style={{ marginRight: '20%' }}>
-              <Link to="/">Home</Link>
-            </li>
-            <li style={{ marginRight: '20%' }}>
-
-              <Link to="/doctor">Doctor</Link>
-            </li>
-            <li style={{ marginRight: '20%' }}>
-
-              <Link to="/chemist">Chemist</Link>
-            </li>
-            <li style={{ marginRight: '20%' }}>
-
-              <Link to="/signup">SignUp</Link>
-            </li>
-                </ul> 
-             </div>
+        <nav className="sticky top-0 flex min-h-[50px] min-w-full bg-gradient-to-r from-blue-500 to-teal-500 z-50">
+          <div className="flex-grow-0 w-1/2">
+            <p className="text-black font-bold ml-4"></p>
+          </div>
+          <div className="flex-grow w-4/5 justify-end">
+            <ul className="flex h-full min-w-[60%] justify-between items-center mr-4">
+              <li className="mr-12">
+                <Link to="/feed" className="text-black text-lg hover:text-gray-700 transition duration-300">Feed</Link>
+              </li>
+              <li className="mr-12">
+                <Link to="/care-taker" className="text-black text-lg hover:text-gray-700 transition duration-300">CareTaker</Link>
+              </li>
+              <li className="mr-12">
+                <Link to="/doctor" className="text-black text-lg hover:text-gray-700 transition duration-300">Doctor</Link>
+              </li>
+              <li className="mr-12">
+                <Link to="/chemist" className="text-black text-lg hover:text-gray-700 transition duration-300">Chemist</Link>
+              </li>
+              <li className="mr-12">
+                <Link to="/signup" className="text-black text-lg hover:text-gray-700 transition duration-300">SignUp</Link>
+              </li>
+            </ul>
+          </div>
         </nav>
-      {/* <nav style={{ position: 'sticky', top: 0, left: 0, minWidth: '100vw', backgroundColor: 'lightgray', padding: '10px 20px', zIndex: 999 }}>
-           <ul style={{ display: 'flex', listStyle: 'none', padding: 0 , marginLeft:'40%', width:'50vw'}}> 
-            <li style={{ marginRight: '20%' }}>
-              <Link to="/">Home</Link>
-            </li>
-            <li style={{ marginRight: '20%' }}>
-
-              <Link to="/doctor">Doctor</Link>
-            </li>
-            <li style={{ marginRight: '20%' }}>
-
-              <Link to="/chemist">Chemist</Link>
-            </li>
-            <li style={{ marginRight: '20%' }}>
-
-              <Link to="/login">Login</Link>
-            </li>
-          </ul>
-        </nav> */}
-        <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/doctor" element={<Doctor />} />
-        <Route path="/chemist" element={<Chemist />} />
-        <Route path="/signup" element={<SignUp />} />
-        </Routes>
-        </div>
-    </Router>
+      </div>
+    </>
   );
 };
 export default Navigation

@@ -1,23 +1,22 @@
 import React, { useState } from 'react';
-// import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid'
 
 export const Motherdetails = ({ onFormDataChange, formData, onNext, onBack }) => {
     return(
     <>
-    <section className="bg-white">
+    <section className="bg-white ">
       <div className="lg:grid lg:min-h-screen lg:grid-cols-2">
-        <main
-          className="flex  justify-center px-8 py-2 sm:px-12 lg:col-span-7 lg:px-16 lg:py-2 xl:col-span-6"
-        >
-          <div className="max-w-xl lg:max-w-3xl">
-          <div className='mt-20'>
+      <main
+      className="flex  justify-center px-8 py-2 sm:px-12 lg:col-span-7 lg:px-16 lg:py-2 xl:col-span-6"
+    >
+          <div className="lg:max-w-3xl">
+          <div className='mt-20 '>
       <h2 className="sr-only">Steps</h2>
     
       <div
         className="relative after:absolute after:inset-x-0 after:top-1/2 after:block after:h-0.5 after:-translate-y-1/2 after:rounded-lg after:bg-gray-100"
       >
         <ol className="relative z-10 flex justify-between text-sm font-medium text-gray-500">
-          <li className="flex items-center gap-2 bg-white p-2">
+          <li className="flex items-center gap2 bg-white p-2">
             <span
               className="size-6 rounded-full bg-gray-100 text-center text-[10px]/6 font-bold "
             >
@@ -26,7 +25,6 @@ export const Motherdetails = ({ onFormDataChange, formData, onNext, onBack }) =>
     
             <span className="hidden sm:block"> Address </span>
           </li>
-    
           <li className="flex items-center gap-2 bg-white p-2">
             <span className="size-6 rounded-full bg-blue-600 text-center text-[10px]/6 font-bold text-white"> 2 </span>
     
@@ -42,7 +40,7 @@ export const Motherdetails = ({ onFormDataChange, formData, onNext, onBack }) =>
     </div>
             <form action="#" className="mt-20 grid grid-cols-6 gap-6">
               <div className="col-span-6">
-                <label htmlFor="Adress" className="block text-sm font-medium text-gray-700"> Emerygeny Number </label>
+                <label htmlFor="Adress" className="block text-sm font-medium text-gray-700"> Emergency Number </label>
     
                 <input
                   type="text"
@@ -63,8 +61,8 @@ export const Motherdetails = ({ onFormDataChange, formData, onNext, onBack }) =>
                   value={formData.phone} onChange={onFormDataChange}
                 />
               </div> */}
-              {/* <div className="col-span-6 ">
-              <div className="col-span-6 sm:col-span-3">
+              {/* <div className="col-span-6 "> */}
+              {/* <div className="col-span-6 sm:col-span-3">
                 <label htmlFor="Country" className="block text-sm font-medium text-gray-700">
                   Country
                 </label>

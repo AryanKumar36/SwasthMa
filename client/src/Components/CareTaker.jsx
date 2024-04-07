@@ -1,5 +1,6 @@
 import React from 'react';
-export const Doctor = ({name, specialty, imgUrl, id, fees,rating,location}) => {
+import { Link } from 'react-router-dom';
+export const CareTaker = ({name,age,location,charges,status,id,rating}) => {
 
   return (
     <section className="container mx-auto p-10 md:p-20 antialiased">
@@ -8,10 +9,10 @@ export const Doctor = ({name, specialty, imgUrl, id, fees,rating,location}) => {
         <div className='min-w-full'>
           <div className="p-5 pb-10 min-w-full">
             <h1 className="text-2xl font-semibold text-gray-800 mt-4">
-              Dr Makashir
+              Daimaa Savitri
             </h1>
             <p className="text-xl text-gray-400 mt-2 leading-relaxed">
-              New Delhi, jangpura
+              New Delhi, Laxmi Nagar
             </p>
           </div>
           <div className="bg-blue-50 p-5">
@@ -36,17 +37,18 @@ export const Doctor = ({name, specialty, imgUrl, id, fees,rating,location}) => {
                     </svg>
                   </div>
                   <div className="text-gray-600 ml-2 text-sm md:text-base mt-1">
-                    56 reviews
+                    6 reviews
                   </div>
                 </div>
               </div>
               <div className="font-bold text-lg text-green-600 mt-2">
-                Fees: ₹1000
+                Mothly charges: ₹1000
               </div>
+              <Link to='/care-taker/username'>
               <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50">
-                Book Appointment
+                Open to Hire
               </button>
-
+              </Link>
             </div>
           </div>
         </div>
