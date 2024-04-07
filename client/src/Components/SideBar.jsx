@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'; // Assuming you're using React Router for navigation
+import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
@@ -22,7 +22,7 @@ const Sidebar = () => {
             </li>
             <li>
               <NavLink to="/resources" activeClassName="bg-blue-500 text-white" className="flex items-center p-4 hover:bg-blue-300 transition-colors">
-                <span className="ml-2">Resources</span>
+                <span className="ml-2">Create Post</span>
               </NavLink>
             </li>
           </ul>

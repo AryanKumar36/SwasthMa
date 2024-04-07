@@ -1,24 +1,27 @@
 import React from 'react';
-export const Doctor = ({name, specialty, imgUrl, id, fees,rating,location}) => {
+import { FaWhatsapp } from 'react-icons/fa';
+export const Doctor = ({doctor }) => {
 
   return (
     <section className="container mx-auto p-10 md:p-20 antialiased">
       <article className="flex flex-wrap shadow-lg mx-auto max-w-3xl group cursor-pointer transform duration-500 hover:-translate-y-1">
-        <img className="w-full max-h-[400px] object-cover md:w-52" src="https://st2.depositphotos.com/2668729/5810/v/450/depositphotos_58102691-stock-illustration-female-doctor-indian-avatar.jpg" alt="" />
+        <div>
+        <img className="w-full max-h-[400px] object-cover md:w-52" src={doctor.imageUrl} alt="" />
+        </div>
         <div className='min-w-full'>
           <div className="p-5 pb-10 min-w-full">
             <h1 className="text-2xl font-semibold text-gray-800 mt-4">
-              Dr Makashir
+              {doctor.name}
             </h1>
             <p className="text-xl text-gray-400 mt-2 leading-relaxed">
-              New Delhi, jangpura
+              {doctor.location}
             </p>
           </div>
           <div className="bg-blue-50 p-5">
             <div className="sm:flex flex-row sm:justify-between">
               <div>
                 <div className="text-lg text-gray-700">
-                  <span className="text-gray-900 font-bold">7km</span> from your location
+                  <span className="text-gray-900 font-bold">{doctor.distance} Km</span> from your location
                 </div>
                 <div className="flex items-center min-w-full">
                   <div className="flex">
@@ -41,12 +44,12 @@ export const Doctor = ({name, specialty, imgUrl, id, fees,rating,location}) => {
                 </div>
               </div>
               <div className="font-bold text-lg text-green-600 mt-2">
-                Fees: ₹1000
+                Fees: ₹{doctor.fees}
               </div>
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50">
-                Book Appointment
-              </button>
-
+                <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-green-300 focus:ring-opacity-50 flex items-center justify-center gap-2">
+                  <FaWhatsapp />
+                  For appointment
+                </button>
             </div>
           </div>
         </div>

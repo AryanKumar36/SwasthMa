@@ -2,13 +2,17 @@ import React, { useState } from 'react';
 
 export const Feed = ({username, date,imageUrl,title,content}) => {
   const [expanded, setExpanded] = useState(false);
-
+  // const url = 'http://localhost:8080/api/v1'
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
 
+
+  // const response = axios.get(`${url}/post`).then((response) => response)
+
   return (
-    <div className="flex justify-center pt-5 min-w-full ">
+    // <div style={{backgroundColor: rgba(219, 234, 254, 0.2)}}> 
+    <div className="flex justify-center pt-5 min-w-full " >
       <div className="max-w-xl w-full bg-white rounded-lg shadow-md overflow-hidden">
         <div className="flex items-center p-5">
           <div className="flex-shrink-0">
