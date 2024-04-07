@@ -2,6 +2,7 @@ package com.akcodes.swasthma.payloads.post;
 
 
 import com.akcodes.swasthma.entities.post.Category;
+import com.akcodes.swasthma.entities.post.Comment;
 import com.akcodes.swasthma.entities.user.User;
 import com.akcodes.swasthma.payloads.user.UserDto;
 import jakarta.persistence.JoinColumn;
@@ -12,6 +13,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 @Getter
 @Setter

@@ -1,5 +1,6 @@
 package com.akcodes.swasthma.entities.post;
 
+import com.akcodes.swasthma.entities.user.User;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,8 +12,18 @@ import lombok.Setter;
 public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
-    private Long id;
+    @Column(name = "comment_id", nullable = false)
+    private int id;
+
+    private String content;
+
+    @ManyToOne
+    @JoinColumn(name = "post_id")
+    private Post post;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 
 
 

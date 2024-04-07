@@ -1,5 +1,6 @@
 package com.akcodes.swasthma.entities.user;
 
+import com.akcodes.swasthma.entities.post.Comment;
 import com.akcodes.swasthma.entities.post.Post;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
@@ -11,6 +12,7 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -72,4 +74,8 @@ public class User {
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Post> posts= new ArrayList<>();
+
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Comment> comments = new ArrayList<>();
 }
