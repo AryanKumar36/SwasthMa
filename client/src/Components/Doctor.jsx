@@ -1,9 +1,13 @@
 import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
+import Sidebar from './SideBar';
 export const Doctor = ({doctor }) => {
 
   return (
-    <section className="container mx-auto p-10 md:p-20 antialiased">
+    <div className='flex flex-row justify-start w-full'>
+    <Sidebar />
+    <div className='flex flex-row justify-end w-full'>
+    <section className="container mx-auto p-10 md:p-20 antialiased justify-end">
       <article className="flex flex-wrap shadow-lg mx-auto max-w-3xl group cursor-pointer transform duration-500 hover:-translate-y-1">
         <div>
         <img className="w-full max-h-[400px] object-cover md:w-52" src={doctor.imageUrl} alt="" />
@@ -55,5 +59,7 @@ export const Doctor = ({doctor }) => {
         </div>
       </article>
     </section>
+    </div>
+    </div>
   )
 }

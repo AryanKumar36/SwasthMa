@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Sidebar from './SideBar';
 
 export const Feed = ({username, date,imageUrl,title,content}) => {
   const [expanded, setExpanded] = useState(false);
@@ -12,11 +13,13 @@ export const Feed = ({username, date,imageUrl,title,content}) => {
 
   return (
     // <div style={{backgroundColor: rgba(219, 234, 254, 0.2)}}> 
+    <div className='flex flex-row justify-start'>
+      <Sidebar />
     <div className="flex justify-center pt-5 min-w-full " >
       <div className="max-w-xl w-full bg-white rounded-lg shadow-md overflow-hidden">
         <div className="flex items-center p-5">
           <div className="flex-shrink-0">
-            <img className="w-10 h-10 rounded-full" src="https://via.placeholder.com/40" alt="Avatar" />
+            <img className="w-10 h-10 rounded-full" src="https://www.bing.com/images/search?view=detailV2&ccid=fUP6H9r9&id=A7C7DDBCD5A8AA154A6E498DBA1C7E5ADE994BBC&thid=OIP.fUP6H9r9LUBe1qn0ZNP6zgHaE8&mediaurl=https%3a%2f%2fbabiesmata.com%2fwp-content%2fuploads%2f2020%2f04%2fWorkouts-and-Exercises-for-Pregnant-Women-2.jpg&exph=1200&expw=1800&q=pregnannt+mother+exercise&simid=608014086750031702&FORM=IRPRST&ck=7B99EDDC97E62D0989ABC97122AB9315&selectedIndex=2&itb=0" alt="Avatar" />
           </div>
           <div className="ml-3">
             <div className="font-medium">{username}</div>
@@ -52,6 +55,7 @@ export const Feed = ({username, date,imageUrl,title,content}) => {
           )}
         </div>
       </div>
+    </div>
     </div>
   );
 }

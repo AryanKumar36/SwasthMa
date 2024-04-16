@@ -43,6 +43,13 @@ function App() {
     imageUrl: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQA2gMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYDBAcCAQj/xAA6EAABAwMCAwYFAgQFBQAAAAABAAIDBAUREiEGMUETIjJRYXEUQoGRoQfwM1Kx0RUjU4LBFkNyouH/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EAB4RAQEAAgIDAQEAAAAAAAAAAAABAhESMQMhQRNR/9oADAMBAAIRAxEAPwDuKIiAiIgIiguM+II+G7FNXubrlyGQs/meeX0HM+yDeut4ttpj7S41sFO3Gf8AMfgkegVLuP6tWSmJbRU1XWnzaBG3/wBjn8LjV1utXcq+W4V8plmkOQ6T8Y8lGSTS47owD83PdXpY/Qtg/Uux3aVkDmz0czulQBgf7gSFdGua4AtIIO+QvyOZ52Adq0gZyDjor9wl+o9ZZII6eqdJWU4eMMc/LmN9M81DTviLWt9ZBcKOGrpX64ZmB7HeYK2UQREQEREBERAREQEREBERAREQEREBERAREQFzD9dakRWe3Q/zzucfYD/6unlcv/XS3T1NooKyFheyCUskx8urkfuMfVFigcK8OxXWNtVVgOj1kafPC6ELLbYo2Njo4gANhpCptkq6iy25tC6ForGOLpWyuAEYO43HPYjktyn4xq5KhzZIIZIY86uxccjA3xkbnkuN3bXpx1IlLxbqSRmg0seOWzFSuLrVBRR0k8Eehp1NOB15rcvnEVyq62aKBslKyBupzHxZfj2yvEBrLlRutlVmczyN7ORzO/C48nDHMDmR5ZUwlnvZnZZ06J+idwfNYqqglcSaaYOZk/I8bY+rXLo65T+jTBFV3Fvat/hNDGgHEoBOXjO+Af6rqo5LvLt5rNPqIiIIiICIiAiIgIiICIiAiIgIiICIiAiIgKH4qpn1dnlibuwkdq3GdTOo/fkpheXgOaWkZB5hSrLq7cWtVhpqikfTvBa+nmkiLgdyNWRn6EKSFmoaN7TPKCdTXEl2BzGM+e6lbxTttt5nhhh7Njw2Rr8bSZGD9RjH2UTVTV3aOMMMcjCO92hwuF3vT143c9NG7QWiS8h8tQwSyDS7Q4hx3wOXRTFhtVLDcRKwajF4TnJGfqqncKeV9U7sfhBITvpaTj1581ZeFO0dXdiNTnEBpKa9rl6ntvfpdbKltTV10zNMTNcUPmQXZ/GD910kLXoqWGji7OnZoaXFxGc5J5lbC7yaeTPLlRERVkREQEREBERAREQEREBERAREQEREBERAXlxAG69LBNh4Lc5GN0gieIIIbpTOpoZo/iYiDsc6c9D5ZVAkqpbdVPhroXNe08iOfqPRWXhRj4573DIczQ3B+vzIIGk/bCkrpb6W4wdnVxgg+F48TT6FavilXHPi55LdIpZmtbGA4u5Y6K6cF00fxbp9IDi04/H91Tb/AMNz2uUTxap4A4YLfF7YVr4SmmfQOraV8JkBETIy7IGDu12OTj+Nly4WXp2yylx7XoBfVH2a7QXanfLDlr43mOaF3iieObT+9xgqQW3AREQEREBERAREQEREBERAREQEREBERAXwnCFYidR9FZB8fI4ju7LA52gF4G3zf3WZw2XkAHunqtRFYDm23j2Zr3NbDdqRsgLjgGSPun7tLVKV0zaGmnqJAezjjc/AGScA7D12UFxmw0VJR3eFoL7ZVtldgc2Huu/BVmHZVlM17Hao3gPa4e+Qf6LUuixwG5Xi9XaeWquD5ou0cWwxY0xtb1Y316eu/srLwNDJbbtC+he91DVRMFUD/qHdp99vyrXxfbI226pJiBD3M6eE6tiP31UNwQ5hFU4EYEm4/wDB39iutnra/G9xBcJrRxc6ttDiZjGxtbTtG0zc4aTnk4b4Vt4f4np7yx+iOSGWM4lhlYWPjPqD09QoG5UclJxlBVmF0tLXROglw3IYRu0n7lZOKaSagZDxBbwfiaE4nH+tCfED7c1w0bXlpBGxyvq0LfVsqKSKphOY5WBw+q3WO1DKzYPSIigIiICIiAiIgIiICIiAiIgIiIPEhwMLECvUx3C8DktQHLHq38iF7cFqyuLXhx5DmtRGGeCKqpamCoAMUjSxwPXJI/oQojgmaSO3zWmodme3TGAE83R82n7bfRS9Q/TTyYPztyfqP7Ks0FZUHiyerbTNjpqgMjbiTLpDyzjz23H5QWi40jK2llp3jZ7S0ei5Bw1USWe+vpqp3dfUOik8sk6SV2YEPYC0jfkVyX9WLc6310dygBbHVeLT8so6/UYP0K3jfix1Zp7SljLs6tAJ+yNIc3DmjBGHg75WvbKr4qgo5R/3adkn3G69VVVDQU8tVUvDKeJpc9x6ALCFI8Q9pTbAMzp9uakaeQbDpjKr/wAXDPWwT08rZIZ4tQc05DtlJwPySc7N2PuoqXRY4HF0bSeeN1kWAREQEREBERAREQEREBERAREQYZ+QXgLNMMsICwMIwMLUHpy1pRtyWysTwtIjXAv7VnmBgZ6fvKi7lZ5PjGV9sexk7SSNbc6SeZB5jPkpWvd8OwTN5N8XsvHxLY4C8kHUcBXWx6tYmipWsqX65W+Ij9+qhePLf/jHDlbSsZqlii7eHA31N3x9sqaicXSSDyYD+ViMxjrNQaHHQNiOadDV4Ufq4ZsUuT3qVoznntt/RSupkjS14y1wwdloUsTaG1RUkTdLIX6Yx/KNRwPstpmzHuz4Sgr80Qt93pqSjjgip4IXve2NmkOLjkYA2BODlWGD/LjZGdzjW8+ZJ/5K53dL2/8A6gqBT95zSyMHlv0H3IUtdb7Oytighe0EAAvHLUPE72WLnI6zxZV0CB+Hbk567rbUJaqv4uiiqtOkSbt9R5+yl4Xh7fVL/XNkREWQREQEREBERAREQEREBERB8IWq4aJCPqFtrBUDcEKweQvLsdV8a5fXEBpPkto07jC2ejmhz/EYW/hUmmr5mxRMlIJZs4eo5q8SsEUTp5u+/wAtWAFWr5aKqas7ekiiMbmNc5jO6dR5kZ59Fz8tyk3i7eLjbrJtUd3pC9zpJOzzHjvJBc6N9eT27A0MxqJ2Kqc7J4pHMezS9uzmnotaQsbjXO1rvIHC4/vl9jr+GN6roYfHUYEUjX5fnDTnbKx1/wATFbq19NSyTTNaezjYO8442AVFpr/DQTxytkGYzlxByCOq6JHW6mlrHeHqOoXfx5844eTDhXMrJwdf56qGS4UjqdhJle+R7d5D6Ak7Kyt4LqSZO1rISX4BcGnIaPlHkrT8Ycd5o9wVjfVB+2cKflN+1/bLWoz0FN8NSMikkbIWDGQ0DA6D6LZY5jHAtOFFmqc04dsejjyK8yOe9pfGSCNiM/lbvTmsgOQvq1LXOaijY87Hw/ZbawCIiAiIgIiICIiAiIgIiIC8SN1NPmva8Sv0Mc7yGUGmdihOrAzhaT6oQs7WoeAxz8AnoshqI3RFzXtcMfKcrpGWCrMb5e1qXaYIvAw/O4efotX4mWbW+PuNccOmdyA9FjkkhB1udE5/80r8gf7VryVdJnMj5al45Dws+yKz1lHSXGF0Tgchhb2/WPbY+pyqNdOCLi9zPgK3tAQcmdgbk+mFbXXKTkxjGMHhYBsF9fcqmRoAwOmwWdY76bmWUcyrOHb1TtfFUUsWAD32SbfXbZdAt19pInQNNTC+QMAcxrxvtut2LQDl51OcPCFGXeot1pInraITxue1pDWguYSCc4PPktY8cUtyzq1up+0YJaZwLHDI9itCeOdh3BHrhRtn4pjqZWUVnttTozgFwAa3P12Ctf8Ah9aXAuqmcuWnks85eizSsySy7g5IHMYWxbpnukbE4uLSdjjkrGy0xk5ndrPo0BbkNNDB/Cia32CyFNCIIQweZJ9ysyDkiIIiICIiAiIgIiICIiAiIgLBWbQH1IC+okFc4iaHRQRnwuk3UTc4xTR5gc5hx0RF2iIe310lRViCZkb2nrjB/CnDSRAZAI+q+IsRWPsmgrLFCx5wcoi0JSlpomND2t7xG6qPGELaisqw/OImtczB5HAH/KIs3pce1qoWsjo6F8bGsyxpw0YHRWpu7QfREWPhe31EREEREBERAREQEREBERAREQf/2Q=='
   },
   ]
+  // const chemist=[
+  //   {
+  //     location: 'Janakpuri, New Delhi',
+  //     name:'Guru Kripa',
+  //     timing:'10:00-18:00',
+  //   }
+  // ]
 
   const careTakers = [
     {
@@ -78,11 +85,11 @@ function App() {
   return (
     <Router>
       <Navigation />
-      <div className='flex flex-row justify-start'>
-        {showSideBar ? <Sidebar /> : null}
+      {/* <div className='flex flex-row justify-start'> */}
+        {/* {showSideBar ? <Sidebar /> : null} */}
         <Routes>
           <Route path="/feed" exact element={<Feed isShowSideBar={isShowSideBar} />} />
-          <Route path="/doctor" element={<div className='flex flex-col items-center min-w-full'>
+          <Route path="/doctor" element={<div className='flex flex-col items-center min-w-full '>
             {
               doctors.map((doctor) => (
                 <Doctor doctor={doctor} />
@@ -98,7 +105,7 @@ function App() {
           </div>} />
           <Route path='/care-taker/:username' element={<CareTakerProfile isShowSideBar={isShowSideBar} />} />
         </Routes>
-      </div>
+      {/* </div> */}
       <Footer />
     </Router>
   )
